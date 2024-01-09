@@ -1,0 +1,22 @@
+{
+    "get_password": {
+        "times": 182,
+        "success": 0,
+        "failure": 0
+    },
+    "เชิญ": {
+        "times": 3,
+        "success": 0,
+        "failure": 0
+    },
+    "school-record": {
+        "times": 116,
+        "success": 0,
+        "failure": 0
+    },
+    "getall_password": {
+        "times": 6,
+        "success": 0,
+        "failure": 0
+    }
+}
