@@ -1,8 +1,12 @@
 import discord
 from discord.ext import commands
 import os
+import json
 
 intents = discord.Intents.all()
+
+with open("config.json", "r" ,encoding="utf8") as f:
+        config = json.load(f)
 
 #สร้างตัว BOT
 class smd1(commands.Bot):
@@ -25,4 +29,4 @@ async def on_ready():
       print(f"{bot.user} is Ready")
       print('-------------------------------')
 
-bot.run("OTk5MzM3MDc4OTM0NDc0NzUy.Gichke.u969yCLv0PcJWJH8jxhx8OhCM-gZhG-PCnoziM")
+bot.run(config.get('token'))
